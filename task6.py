@@ -28,3 +28,29 @@ for value in cycle([1, 2, 3]):
         break
     print(value)
     i += 1
+
+"""
+вариант преподавателя:
+
+list_int = []
+
+a = int(input("Укажите первое число последовательности >>> "))
+n = int(input("Укажите последнее число последовательности >>> "))
+
+for x in count(a):
+    if x > n:
+        break
+    print(x)
+    list_int.append(x)
+    
+# б) итератор, повторяющий элементы некоторого списка, определенного заранее.
+print()
+print(list_int)
+
+count = 0
+for item in cycle(list_int):
+    if count >= len(list_int):
+        break
+    print(item)
+    count += 1
+"""

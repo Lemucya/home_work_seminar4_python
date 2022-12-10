@@ -6,3 +6,12 @@
 my_list = [i for i in range(20, 240) if i % 20 == 0 or i % 21 == 0]
 
 print("Список чисел кратных 20 или 21 в диапазоне [20..240): ", my_list)
+
+"""
+вариант преподавателя:
+
+print([x for x in range(20, 240) if x % 20 == 0 or 21 ==0])
+
+my_lst = [x for x in range(20, 240)]
+my_lst = list(range(20, 240))
+"""

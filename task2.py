@@ -14,3 +14,23 @@ for i in range(1, len(list_user)):
         (result_list.append(list_user[i]))
 print("Исходный список: ", list_user)
 print("Список, элементы которого больше предыдущего: ", result_list)
+
+"""
+вариант преподавателя:
+
+primary_list = [300, 2, 12, 44, 1, 1, 4, 10, 7, 1, 78, 123, 55]
+
+# вариант без генераторного выражения
+res_list_1 = []
+for ei in range(1, len(primary_list)):
+    if primary_list[el] > primary_list[el - 1]:
+        res_list_1.append(primary_list[el])
+        
+print(res_list_1)
+
+# вариант с генераторным выражением c LC
+res_list_2 = [primary_list[el] for el in range(
+    1, len(primary_list)) if primary_list[el] > primary_list[el - 1]]
+    
+print(res_list_2)
+"""

@@ -12,3 +12,18 @@ my_list = [i for i in range(100, 1001, 2)]
 print("Список чётных чисел в диапазоне [100..1000]:\n", my_list)
 print("Произведение всех элементов списка:\n",
       reduce(lambda x, y: x * y, my_list))
+
+"""
+вариант преподавателя:
+
+from functools import reduce
+
+primary_list = [x for x in range(100, 1001, 2)]
+primary_list = list(range(100, 1001, 2))
+
+print(primary_list)
+
+res = reduce(lambda item, item2: item * item2, primary_list)
+
+print(f"Результат: {res}")
+"""
